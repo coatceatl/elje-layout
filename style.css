@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Navigo';
+  src: url(fonts/Navigo-Bold.ttf),
+       url(fonts/Navigo-Light.ttf),
+       url(fonts/Navigo-Regular.ttf)
+}
+
 body,
 ul {
   margin: 0;
