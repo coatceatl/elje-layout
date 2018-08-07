@@ -10,3 +10,28 @@ body {
   display: flex;
   flex-direction: row;
 }
+.col-3 {
+  width: 33%;
+}
+.language {
+  display: inline-flex;
+  flex-direction: row;
+  color: #fff;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+.language li {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  color: #3D4252;
+}
+.language li.active {
+  background-color: #3D4252;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
