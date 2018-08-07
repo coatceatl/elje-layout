@@ -144,6 +144,9 @@ ul {
   width: 34px;
   height: 34px;
 }
+.hamburger {
+  display: none;
+}
 
 /* hero */
 .hero {
@@ -287,6 +290,39 @@ ul {
  .container {
     width: 100%;
   }
+  .hamburger {
+    display: flex;
+    position: fixed;
+    top: 18px;
+    right: 20px;
+    width: 32px;
+    height: 21px;
+    background: #fff;
+    border: none;
+    padding: 0;
+  }
+  .hamburger__icon {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #3D4252;;
+    margin: auto;
+  }
+  .hamburger__icon:after,
+  .hamburger__icon:before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background-color: #3D4252;;
+    margin: auto;
+    transform-origin: 50% 50%;
+  }
+ .hamburger__icon:before {
+   top: calc(100% - 3px);
+ }
 }
 @media(max-width: 375px) {
   .header-belt {
