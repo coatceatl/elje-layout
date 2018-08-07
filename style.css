@@ -88,7 +88,9 @@ ul {
 .language__list,
 .logo,
 .social,
-.menu {
+.menu,
+.map,
+.account {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -118,6 +120,7 @@ ul {
 .header-menu {
   background-color: #3D4252;
   padding: 13px 100px 15px 100px;
+  justify-content: space-between;
 }
 .search__link {
   border: 1px solid #656C81;
@@ -130,6 +133,30 @@ ul {
 .hero {
   background: url(img/header-bg@2x.png) center center/cover no-repeat;
   height: 368px;
+}
+.services {
+  display: flex;
+}
+.search,
+.map {
+  display: inline-flex;
+}
+.map {
+  border: 2px solid #656C81;
+  border-radius: 17px;
+  width: 80px;
+  height: 34px;
+  margin-left: 84px;
+}
+.map__link,
+.account__link {
+  color: #FFFFFF;
+  font-family: Navigo;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  text-decoration: none;
 }
 .menu__list {
   display: flex;
@@ -153,4 +180,10 @@ ul {
   line-height: 18px;
   text-align: left;
   text-decoration: none;
+}
+.account {
+  border: 2px solid #656C81;
+  border-radius: 17px;
+  width: 131px;
+  height: 34px;
 }
