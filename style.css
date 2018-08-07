@@ -45,19 +45,17 @@ ul {
   background-color: #fff;
 }
 .language {
-  width: 25%;
   display: inline-flex;
   flex-direction: row;
-  text-transform: uppercase;
-  overflow: hidden;
-  cursor: pointer;
 }
 .language__item {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #3D4252;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
 }
 a.language__link {
   font-size: 11px;
@@ -67,13 +65,13 @@ a.language__link {
   width: 34px;
   text-align: center;
   text-decoration: none;
+  color: #3D4252;
 }
 .active {
   background-color: #3D4252;
   border-radius: 50%;
   width: 34px;
   height: 34px;
-  color: #fff;
 }
 .active a.language__link {
   color: #fff;
@@ -81,7 +79,6 @@ a.language__link {
 .time {
   display: inline-flex;
   flex-direction: row;
-  margin-left: 48px;
 }
 .time__image,
 .time__text {
@@ -90,13 +87,14 @@ a.language__link {
   align-items: center;
   justify-content: center;
 }
-.time__text {
+.time__link {
   color: #3D4252;
   font-size: 11px;
   font-weight: 700;
   line-height: 13px;
   text-align: left;
   margin-left: 15px;
+  text-decoration: none;
 }
 .language__list,
 .logo,
@@ -155,6 +153,8 @@ a.language__link {
 }
 .services {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .search,
 .map {
@@ -277,6 +277,18 @@ a.language__link {
 @media(max-width: 1024px) {
   .header-menu {
     display: none;
+  }
+  .mobile-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: #3D4252;
+    opacity: 0.95;
+  }
+  .menu {
+    height: 100%;
+    width: 100%;
   }
   .time {
     margin-left: 8px;
