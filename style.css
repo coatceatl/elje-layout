@@ -87,7 +87,8 @@ ul {
 }
 .language__list,
 .logo,
-.social {
+.social,
+.menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -129,4 +130,27 @@ ul {
 .hero {
   background: url(img/header-bg@2x.png) center center/cover no-repeat;
   height: 368px;
+}
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+.menu__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu__link {
+  color: #FFF;
+  font-family: Navigo;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  text-decoration: none;
 }
