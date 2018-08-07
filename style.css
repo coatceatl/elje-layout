@@ -323,6 +323,17 @@ ul {
  .hamburger__icon:before {
    top: calc(100% - 3px);
  }
+ .hamburger.active .hamburger__icon {
+   background-color: transparent;
+ }
+ .hamburger.active .hamburger__icon:after {
+   transform: rotate(-45deg);
+   top: 9px;
+ }
+  .hamburger.active .hamburger__icon:before {
+   transform: rotate(45deg);
+   top: 9px;
+ }
 }
 @media(max-width: 375px) {
   .header-belt {
