@@ -42,11 +42,12 @@ ul {
 
 .header-belt {
   margin: 13px 100px 15px 100px;
+  background-color: #fff;
 }
 .language {
+  width: 25%;
   display: inline-flex;
   flex-direction: row;
-  color: #fff;
   text-transform: uppercase;
   overflow: hidden;
   cursor: pointer;
@@ -56,16 +57,9 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fff;
-}
-.active {
-  background-color: #3D4252;
-  border-radius: 50%;
-  width: 34px;
-  height: 34px;
+  color: #3D4252;
 }
 .language__link {
-  color: #3D4252;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -74,7 +68,14 @@ ul {
   text-align: center;
   text-decoration: none;
 }
-.language__item.active.language__link {
+.active {
+  background-color: #3D4252;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  color: #fff;
+}
+.active.language__link {
   color: #fff;
 }
 .time {
@@ -107,6 +108,9 @@ ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.social {
+  width: 25%;
 }
 .social__list {
   display: flex;
@@ -152,6 +156,12 @@ ul {
 .search,
 .map {
   display: inline-flex;
+}
+.search__link {
+  background-color: #3D4252;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .map {
   border: 2px solid #656C81;
@@ -222,4 +232,67 @@ ul {
   width: 980px;
   text-align: center;
   text-transform: uppercase;
+}
+.account__icon {
+  color: #FFFFFF;
+  font-family: Navigo;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16px;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  background-color: #2694F7;
+  border-radius: 50%;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* media */
+@media(max-width: 1200px) {
+  .language {
+    width: 44%;
+  }
+  .logo {
+    width: 36%;
+  }
+  .social {
+    width: 20%;
+  }
+  .col-5 {
+    width: 15%;
+  }
+  .col {
+    width: 70%;
+  }
+  .map {
+    margin-left: 8px;
+  }
+}
+@media(max-width: 1024px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+@media(max-width: 375px) {
+  .container {
+    width: 100%;
+  }
+  .header-belt {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .logo {
+    width: 75%;
+  }
+  .social {
+    display: none;
+  }
+  .heading__subtitle,
+  .heading__title {
+    font-size: 20px;
+  }
 }
