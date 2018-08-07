@@ -9,6 +9,7 @@ body,
 ul {
   margin: 0;
   padding: 0;
+  font-family: Navigo;
 }
 .container-fluid {
   width: 100%;
@@ -65,7 +66,6 @@ ul {
 }
 .language__link {
   color: #3D4252;
-  font-family: Navigo;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -91,7 +91,6 @@ ul {
 }
 .time__text {
   color: #3D4252;
-  font-family: Navigo;
   font-size: 11px;
   font-weight: 700;
   line-height: 13px;
@@ -164,7 +163,6 @@ ul {
 .map__link,
 .account__link {
   color: #FFFFFF;
-  font-family: Navigo;
   font-size: 13px;
   font-weight: 700;
   line-height: 16px;
@@ -187,7 +185,6 @@ ul {
 }
 .menu__link {
   color: #FFF;
-  font-family: Navigo;
   font-size: 12px;
   font-weight: 700;
   line-height: 18px;
@@ -207,4 +204,22 @@ ul {
   justify-content: center;
   height: 100%;
   color: #fff;
+}
+.heading__subtitle {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 42px;
+  width: 980px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.heading__title {
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  line-height: 78px;
+  width: 980px;
+  text-align: center;
+  text-transform: uppercase;
 }
