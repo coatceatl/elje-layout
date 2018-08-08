@@ -41,7 +41,9 @@ ul {
 /* header-belt */
 
 .header-belt {
-  margin: 13px 100px 15px 100px;
+  height: 62px;
+  margin-left: 100px;
+  margin-right: 100px;
   background-color: #fff;
 }
 .language {
@@ -98,7 +100,6 @@ a.language__link {
   width: 180px;
 }
 .start {
-  width: 35%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -135,6 +136,23 @@ a.language__link {
   align-items: center;
   justify-content: center;
   margin-left: 6px;
+}
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 0;
+}
+.arrow img {
+  z-index: 10;
+}
+.triangle {
+  position: absolute;
+  width: 170px;
+  height: 25px;
+  display: block;
+  top: -15px;
 }
 
 /* header-menu */
