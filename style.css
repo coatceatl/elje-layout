@@ -170,6 +170,10 @@ a.language__link {
 .hamburger {
   display: none;
 }
+.hamburger:active,
+.hamburger:focus {
+  outline: none;
+}
 
 /* hero */
 .hero {
@@ -307,13 +311,21 @@ a.language__link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background: #3D4252;
     overflow: hidden;
   }
-  .menu {
+  .menu,
+  .services,
+  .account {
     height: 100%;
     width: 100%;
+  }
+  .menu__list.mobile-open {
+    padding: 10px;
+  }
+  .menu__item {
+    margin-bottom: 30px;
   }
   .time {
     margin-left: 8px;
