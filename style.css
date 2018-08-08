@@ -313,7 +313,7 @@ a.language__link {
     align-items: center;
     height: 100%;
     background: #3D4252;
-    overflow: hidden;
+    padding: 30px 10px;
   }
   .menu,
   .services,
